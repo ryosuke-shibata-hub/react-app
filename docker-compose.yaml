@@ -16,7 +16,7 @@ services:
     ports:
       - "3001:3001"
   node_2:
-    #本で言うところのポート番号が[3000]番のもの
+    #本で言うところのポート番号が[3000]番のもの"""
     build: ./docker/node
     volumes:
       - ./node:/usr/src/app:cached
