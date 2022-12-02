@@ -2,7 +2,7 @@
 const http = require('http')
 //webサーバーの実行
 const svr = http.createServer(handler)//サーバーの生成
-svr.listen(8080) //ポート番号[8081]で待受
+svr.listen(8081) //ポート番号[8081]で待受
 
 function handler(req, res) {
     console.log('url:', req.url)

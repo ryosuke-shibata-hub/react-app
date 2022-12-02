@@ -22,7 +22,7 @@ services:
       - ./node:/usr/src/app:cached
     command: sh -c "cd react-app && yarn start"
     ports:
-      - "3001:3001"
+      - "3002:3002"
   node_3:
     build: ./docker/node
     volumes:
