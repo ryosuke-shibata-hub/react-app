@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--ライブラリの読み込み-->
+        <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+        <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.38/browser.min.js"></script>
+    </head>
+    <body>
+        <!--要素の定義-->
+        <div id="root"></div>
+        <!--スクリプ1トの定義-->
+        <script type="text/babel">
+            //変数を定義
+            const title = "書道"
+            const imgUrl = "https://uicdn.toast.com/toastui/img/tui-editor-bi.png"
+            //JSXで要素を定義
+            const msg =
+                <div>
+                    <h1>{title}</h1>
+                    <p><img src={imgUrl} /></p>
+                </div>
+            //renderで描画
+            const elm = document.getElementById("root")
+            ReactDOM.render(msg,elm)
+        </script>
+    </body>
+</html>
