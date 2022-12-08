@@ -1,32 +1,32 @@
 version: '3.9'
 
 services:
-  node:
-    build: ./docker/node
-    volumes:
-      - ./node:/usr/src/app:cached
-    command: sh -c "cd react-app && yarn start"
-    ports:
-      - "3000:3000"
-  node_1:
-    build: ./docker/node
-    volumes:
-      - ./node:/usr/src/app:cached
-    command: sh -c "cd react-app && yarn start"
-    ports:
-      - "3001:3001"
-  node_2:
-    #本で言うところのポート番号が[3000]番のもの"""
-    build: ./docker/node
-    volumes:
-      - ./node:/usr/src/app:cached
-    command: sh -c "cd react-app && yarn start"
-    ports:
-      - "3002:3002"
+  # node:
+  #   build: ./docker/node
+  #   volumes:
+  #     - ./node:/usr/src/app:cached
+  #   command: sh -c "cd react-app && yarn start"
+  #   ports:
+  #     - "3000:3000"
+  # node_1:
+  #   build: ./docker/node
+  #   volumes:
+  #     - ./node:/usr/src/app:cached
+  #   command: sh -c "cd react-app && yarn start"
+  #   ports:
+  #     - "3001:3001"
+  # node_2:
+  #   #本で言うところのポート番号が[3000]番のもの"""
+  #   build: ./docker/node
+  #   volumes:
+  #     - ./node:/usr/src/app:cached
+  #   command: sh -c "cd react-app && yarn start"
+  #   ports:
+  #     - "3002:3002"
   node_3:
     build: ./docker/node
     volumes:
       - ./node:/usr/src/app:cached
-    command: sh -c "cd react-app && yarn start"
+    command: sh -c "cd node && yarn start"
     ports:
       - "8081:8081"
